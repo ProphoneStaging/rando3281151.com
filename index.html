@@ -276,8 +276,20 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
             <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
             <h2 class="my-3 mb-10 text-xl font-medium  text-None-400  text-center">See why our customers love us</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [     [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6a4db411-0b10-4940-9895-ccce3336a742.png', 'photo'],   ] }" @keydown.escape= "open = false"   >
-                <!-- <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [     [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/6a4db411-0b10-4940-9895-ccce3336a742.png', 'photo'],   ] }" @keydown.escape= "open = false"   > -->
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/eb13d16f-1a91-413a-b31c-11b24bc8c2e0.png', 'photo'],        [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/893f009b-eb82-4b06-a08f-2f86c87f364e.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6a4db411-0b10-4940-9895-ccce3336a742.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e0c8c3cd-b67d-49ec-bdbe-bac851dc974c.png', 'photo'],       ] }" @keydown.escape= "open = false"   >
+                <!-- <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/eb13d16f-1a91-413a-b31c-11b24bc8c2e0.png', 'photo'],        [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/893f009b-eb82-4b06-a08f-2f86c87f364e.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/6a4db411-0b10-4940-9895-ccce3336a742.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/e0c8c3cd-b67d-49ec-bdbe-bac851dc974c.png', 'photo'],       ] }" @keydown.escape= "open = false"   > -->
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/eb13d16f-1a91-413a-b31c-11b24bc8c2e0.png"  alt="photo of best work"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/eb13d16f-1a91-413a-b31c-11b24bc8c2e0.png"  alt="photo of best work"   loading="lazy" ></div> -->
+                    
+                                    
+                    
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
+                            <video preload="metadata" class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/38dd95dd-fb3c-492c-9d2a-e918d30a4dc5.mp4#t=0.5" >
+                            </video>
+                        </div>
+                    
                                     
                     
                         <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
@@ -287,8 +299,32 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6a4db411-0b10-4940-9895-ccce3336a742.png"  alt="photo of best work"   loading="lazy" ></div>
-                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6a4db411-0b10-4940-9895-ccce3336a742.png"  alt="photo of best work"   loading="lazy" ></div> -->
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/893f009b-eb82-4b06-a08f-2f86c87f364e.png"  alt="photo of best work"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/893f009b-eb82-4b06-a08f-2f86c87f364e.png"  alt="photo of best work"   loading="lazy" ></div> -->
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6a4db411-0b10-4940-9895-ccce3336a742.png"  alt="photo of best work"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6a4db411-0b10-4940-9895-ccce3336a742.png"  alt="photo of best work"   loading="lazy" ></div> -->
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e0c8c3cd-b67d-49ec-bdbe-bac851dc974c.png"  alt="photo of best work"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e0c8c3cd-b67d-49ec-bdbe-bac851dc974c.png"  alt="photo of best work"   loading="lazy" ></div> -->
+                    
+                                    
+                    
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
+                            <video preload="metadata" class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3047032b-11c0-4b26-a9dd-d9255a3c392e.mp4#t=0.5" >
+                            </video>
+                        </div>
+                    
+                                    
+                    
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40">
+                            <video preload="metadata" class="rounded shadow-md object-cover w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/14ca916d-a540-4433-8f4c-8a2c493ff9e7.mp4#t=0.5" >
+                            </video>
+                        </div>
                     
                  
                                     
